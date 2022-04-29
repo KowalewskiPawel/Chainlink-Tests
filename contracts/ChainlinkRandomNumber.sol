@@ -70,9 +70,7 @@ contract VRFD20 is VRFConsumerBaseV2 {
         return getHouseName(s_results[player]);
     }
 
-    // getHouseName function
     function getHouseName(uint256 id) private pure returns (string memory) {
-        // array storing the list of house's names
         string[20] memory houseNames = [
             "Targaryen",
             "Lannister",
